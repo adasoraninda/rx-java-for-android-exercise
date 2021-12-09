@@ -14,6 +14,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             navigate(Exercise1Fragment())
         }
 
+        view.findViewById<Button>(R.id.button_ex_2).setOnClickListener {
+            navigate(Exercise2Fragment())
+        }
+
     }
 
     private fun navigate(fragment: Fragment) {

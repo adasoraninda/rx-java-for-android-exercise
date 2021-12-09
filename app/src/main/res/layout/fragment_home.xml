@@ -18,6 +18,13 @@
             android:text="Exercise 1"
             tools:ignore="HardcodedText" />
 
+        <Button
+            android:id="@+id/button_ex_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise 2"
+            tools:ignore="HardcodedText" />
+
     </LinearLayout>
 
 </ScrollView>
