@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/label_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/input_card_number"
+        android:text="Card Number"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/input_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/label_card_number" />
+
+    <TextView
+        android:id="@+id/label_expire_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/input_card_number"
+        android:text="Expire Date"
+        app:layout_constraintEnd_toStartOf="@id/label_cvc"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_card_number"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/input_expire_date"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="MM/YY"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@id/input_cvc"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/label_expire_date"
+        app:layout_constraintTop_toBottomOf="@id/label_expire_date"
+        tools:ignore="HardcodedText,TextFields" />
+
+    <TextView
+        android:id="@+id/label_cvc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/input_card_number"
+        android:text="CVC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_expire_date"
+        app:layout_constraintTop_toTopOf="@id/label_expire_date"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/input_cvc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@id/label_cvc"
+        app:layout_constraintStart_toEndOf="@id/input_expire_date"
+        app:layout_constraintTop_toBottomOf="@id/label_cvc" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@id/input_cvc"
+        tools:ignore="HardcodedText" />
+
+    <ListView
+        android:id="@+id/list_error"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_submit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

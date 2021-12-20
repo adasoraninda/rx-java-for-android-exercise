@@ -1,4 +1,4 @@
-package com.adasoraninda.rxjavaforandroidexercise
+package com.adasoraninda.rxjavaforandroidexercise.ex1
 
 import android.os.Bundle
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
+import com.adasoraninda.rxjavaforandroidexercise.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.subjects.PublishSubject

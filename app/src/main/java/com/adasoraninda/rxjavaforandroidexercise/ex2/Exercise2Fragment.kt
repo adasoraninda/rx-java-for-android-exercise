@@ -1,4 +1,4 @@
-package com.adasoraninda.rxjavaforandroidexercise
+package com.adasoraninda.rxjavaforandroidexercise.ex2
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
+import com.adasoraninda.rxjavaforandroidexercise.R
 import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.subjects.PublishSubject

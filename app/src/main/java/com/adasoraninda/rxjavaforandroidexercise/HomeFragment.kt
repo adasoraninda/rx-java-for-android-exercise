@@ -4,6 +4,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.adasoraninda.rxjavaforandroidexercise.ex1.Exercise1Fragment
+import com.adasoraninda.rxjavaforandroidexercise.ex2.Exercise2Fragment
+import com.adasoraninda.rxjavaforandroidexercise.ex3.Exercise3Fragment
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
@@ -16,6 +19,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         view.findViewById<Button>(R.id.button_ex_2).setOnClickListener {
             navigate(Exercise2Fragment())
+        }
+
+        view.findViewById<Button>(R.id.button_ex_3).setOnClickListener {
+            navigate(Exercise3Fragment())
         }
 
     }
